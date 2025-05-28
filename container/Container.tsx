@@ -7,7 +7,7 @@ export default function Container({ children }: ContainerProps) {
   return (
     <div>
       <Navbar />
-      <main className="flex items-center justify-center mt-24">{children}</main>
+      <main className="flex items-center justify-center mt-16">{children}</main>
     </div>
   );
 }
