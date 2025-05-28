@@ -5,13 +5,13 @@ export default function page() {
   return (
     <div>
       <div className="flex items-center justify-between px-10 py-8 space-x-64 mt-8">
-        <div>
-          <div className="leading-20 space-y-1">
+        <div className="p-10">
+          <div className="font-semibold tracking-tighter">
             <h1 className="text-4xl">We Make </h1>
             <h2 className="text-5xl">Your Dreams</h2>
             <h3 className="text-6xl">Come True</h3>
           </div>
-          <p className="text-sm text-gray-500 leading-4 mt-4">
+          <p className="text-sm text-gray-600 leading-4 mt-4">
             The shoes That Make Your Feet Feel Premium <br />
             Be careful, they are addictive! <br />
             Do not drain your bank account, buy them now!
@@ -23,6 +23,11 @@ export default function page() {
           width={400}
           height={400}
         />
+      </div>
+      <div>
+        <h1 className="text-2xl font-semibold text-center">
+          Popular Collections
+        </h1>
       </div>
     </div>
   );
