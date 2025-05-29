@@ -33,7 +33,7 @@ export default function TrendingCards() {
   return (
     <div className="flex items-center gap-10 mb-4 px-20">
       {ShoesData.map((shoe) => (
-        <div key={shoe.id} className="bg-red-100 w-80 h-72 rounded-sm">
+        <div key={shoe.id} className="bg-blue-100 w-80 h-72 rounded-sm">
           <div className="flex items-center justify-center flex-col space-y-4 p-2">
             <Image src={shoe.image} alt={shoe.brand} width={250} height={250} />
             <div className="flex items-center justify-between space-x-24 text-sm font-semibold mt-12">

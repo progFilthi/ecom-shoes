@@ -1,4 +1,6 @@
 import Cards from "@/components/Cards";
+import JoggersCards from "@/components/JoggersCards";
+import MemberCard from "@/components/MemberCard";
 import TrendingCards from "@/components/TrendingCards";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
@@ -40,6 +42,24 @@ export default function page() {
         </div>
         <TrendingCards />
       </div>
+      <div className="px-20 text-gray-300 py-12">
+        <hr />
+        <div className="text-sm underline flex items-center gap-1 cursor-pointer justify-center py-4 text-black">
+          <h1>DISCOVER ALL PRODUCTS</h1>
+          <ArrowRightIcon className="h-4" />
+        </div>
+        <hr />
+      </div>
+      <div className="flex items-center justify-between px-20 py-4">
+        <h1 className="text-2xl font-semibold py-2">Shoowrooms</h1>
+        <p className="text-[10px] font-light">
+          There is always <br />
+          a run no matter <br />
+          if you finish or not!
+        </p>
+      </div>
+      <JoggersCards />
+      <MemberCard />
     </div>
   );
 }
