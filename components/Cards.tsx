@@ -9,7 +9,7 @@ interface Product {
   id: number;
   brand: string;
   price: number;
-  image: string;
+  imageUrl: string;
 }
 
 export default function Cards() {
@@ -29,16 +29,12 @@ export default function Cards() {
           <div className="flex items-center justify-center flex-col space-y-4 p-2">
             <Button />
             <Image
-              src={
-                product.image.startsWith("/")
-                  ? product.image
-                  : `/${product.image}`
-              }
+              src={`/${product.imageUrl}`}
               alt={product.brand}
               width={250}
               height={250}
             />
-            <div className="flex items-center justify-between space-x-24 text-sm font-semibold">
+            <div className="flex items-center justify-between w-full px-4 text-sm font-semibold">
               <h1>{product.brand}</h1>
               <h1>${product.price}</h1>
             </div>
