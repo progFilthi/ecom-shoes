@@ -38,7 +38,7 @@ export default function page() {
         <Cards />
         <div className="flex items-center justify-between px-20">
           <h1 className="text-2xl font-semibold py-2">Trending Now</h1>
-          <div className="text-sm underline flex items-center gap-1 cursor-pointer">
+          <div className="text-sm underline flex items-center gap-1 cursor-pointer justify-center">
             <Link href={"/all-products"}>
               <h1>DISCOVER ALL PRODUCTS</h1>
               <ArrowRightIcon className="h-4" />

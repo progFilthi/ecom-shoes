@@ -50,7 +50,7 @@ export default function AllProductsPage() {
           filtered.map((product) => (
             <div key={product.id} className="bg-blue-100 w-80 h-72 rounded-sm">
               <div className="flex items-center justify-center flex-col space-y-4 p-2">
-                <Button />
+                <Button product={product} />
                 <Image
                   src={`/${product.imageUrl}`}
                   alt={product.brand}
