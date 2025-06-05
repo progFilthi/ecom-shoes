@@ -4,6 +4,7 @@ import MemberCard from "@/components/MemberCard";
 import TrendingCards from "@/components/TrendingCards";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -28,16 +29,20 @@ export default function page() {
         <div className="flex items-center justify-between px-20">
           <h1 className="text-2xl font-semibold py-2">Popular Collections</h1>
           <div className="text-sm underline flex items-center gap-1 cursor-pointer">
-            <h1>DISCOVER ALL PRODUCTS</h1>
-            <ArrowRightIcon className="h-4" />
+            <Link href={"/all-products"}>
+              <h1>DISCOVER ALL PRODUCTS</h1>
+              <ArrowRightIcon className="h-4" />
+            </Link>
           </div>
         </div>
         <Cards />
         <div className="flex items-center justify-between px-20">
           <h1 className="text-2xl font-semibold py-2">Trending Now</h1>
           <div className="text-sm underline flex items-center gap-1 cursor-pointer">
-            <h1>DISCOVER ALL PRODUCTS</h1>
-            <ArrowRightIcon className="h-4" />
+            <Link href={"/all-products"}>
+              <h1>DISCOVER ALL PRODUCTS</h1>
+              <ArrowRightIcon className="h-4" />
+            </Link>
           </div>
         </div>
         <TrendingCards />
@@ -45,8 +50,10 @@ export default function page() {
       <div className="px-20 text-gray-300 py-12">
         <hr />
         <div className="text-sm underline flex items-center gap-1 cursor-pointer justify-center py-4 text-black">
-          <h1>DISCOVER ALL PRODUCTS</h1>
-          <ArrowRightIcon className="h-4" />
+          <Link href={"/all-products"}>
+            <h1>DISCOVER ALL PRODUCTS</h1>
+            <ArrowRightIcon className="h-4" />
+          </Link>
         </div>
         <hr />
       </div>
